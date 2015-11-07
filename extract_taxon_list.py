@@ -1,4 +1,4 @@
-# extract taxon list from title in seq matrix, 
+# extract taxon list from title in seq matrix,
 # as Acronema_Kham10_699, Acronema_astrantiifolium_zzs292, Arcuatopterus_thalictroideus_EU236160_1
 # to just taxon name for investigation what genus and species has ben smapled in the sequence matrix
 
