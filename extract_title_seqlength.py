@@ -12,7 +12,8 @@ f = open(userParameters[1], "w")
 f.write("TitleList"+" "+"sequence length"+"\n")
 
 for seq in SeqIO.parse(userParameters[0], "fasta"):
-	f.write(str(seq.id)+ " "+str(len(seq))+"\n")
+	#f.write(str(seq.id)+ " "+str(len(seq))+"\n")
+    f.write(str(seq.id)+"\n")
 f.close()
 
 print "Extract title list!!! Chekck file => " +userParameters[1]
