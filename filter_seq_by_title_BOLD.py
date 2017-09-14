@@ -15,7 +15,7 @@ def filter_seq_title(records):
     seq_identifier_2 = seq_description.split("|")[3]
     seq_source_tag = "BOLD"
 
-    if re.search('.ITS.', seq_description):
+    if re.search('.rbcL.', seq_description):
       print(seq_description)
 
       record.id =  str(seq_taxon_name.replace(" ", "_")) + "_" + seq_identifier_1 + "_"+seq_identifier_2 + "_BOLD"
