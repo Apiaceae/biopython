@@ -16,7 +16,7 @@ def tidy_seq_title(records):
         seq_accession_id = record.description.split(" ")[0].replace(".", "_")
         seq_taxon_name = record.description.split(" ")[1] + "_" + record.description.split(" ")[2]
         seq_title = seq_taxon_name + "_" + seq_accession_id
-        
+
         # seq_accession_id = record.description.split("|")[3]
         # seq_taxon_long = record.description.replace(str(record.id), "")
         # seq_taxon = seq_taxon_long.split()
@@ -39,4 +39,3 @@ count = SeqIO.write(records, userParameters[1], "fasta")
 print "Saved %i records" % count
 
 print "Tidy title!!!\nPlease check!"
-

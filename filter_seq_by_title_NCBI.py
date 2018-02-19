@@ -42,4 +42,3 @@ count = SeqIO.write(records, userParameters[1], "fasta")
 print "Saved %i records" % count
 
 print "filter finished !!!\nPlease check!"
-
